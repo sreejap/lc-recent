@@ -21,7 +21,8 @@ class Solution {
         
         int maxLength = 0;
         HashMap <Integer,Integer>[] dp = new HashMap[nums.length]; // get this syntax correct
-        
+        // dp[i] - HashMap for that ending index position, each diff -> len tells us how long
+        // the arithmetic subsequence is, if it ends at index i in nums, and has the common difference - diff
         for (int right = 0; right < nums.length; right++) {
             dp [right] = new HashMap <>();
             for (int left =0; left < right; left++){
