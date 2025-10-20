@@ -35,7 +35,7 @@ class Solution {
                     }
                 }
             }
-            shortestDistance++;
+            shortestDistance++; // increment here because all nodes at a level are at the same distance
         }
         
         return -1;
